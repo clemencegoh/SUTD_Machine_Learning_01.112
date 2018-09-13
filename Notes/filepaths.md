@@ -4,4 +4,4 @@ https://github.com/clemencegoh/SUTD_Machine_Learning_01.112/Notes/images/
 
 
 **Copy paste as needed** <br>
-![alt text](https://github.com/clemencegoh/SUTD_Machine_Learning_01.112/Notes/images/ " Desc ")
+![alt text](https://github.com/clemencegoh/SUTD_Machine_Learning_01.112/tree/master/Notes/images/ " Desc ")

@@ -82,7 +82,5 @@ A function for learning rate which starts big and ends small: <br>
 
 Add a penalty to simplify model. Lambda is used to reduce the effect of unimportant variables on the overall model. <br>
 
-This is in comparisson with the least squares model, since that tends to lead to overfitting with mutliple lowest point, as shown:
-![alt text](https://github.com/clemencegoh/SUTD_Machine_Learning_01.112/Notes/images/least_squares_compare.jpg " Ridge vs Least squares ")
-
+This is in comparisson with the least squares model, since that tends to lead to overfitting with mutliple lowest point. <br>
 
