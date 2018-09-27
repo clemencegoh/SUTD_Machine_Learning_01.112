@@ -67,5 +67,10 @@ to incomplete matrix Y. [Close to observed members]
 - k factors
 - 
 
+---
+Slide 23
+- Training Loss
+- Formula for Squared Loss
+
 
 
