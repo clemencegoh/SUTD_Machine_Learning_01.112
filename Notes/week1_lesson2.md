@@ -31,6 +31,9 @@ Therefore, **Model Selection** is critical.
 *Overfitting:* If model H is too big, then model performs:
 - well on training data, but poorly on test data
 
+**To overcome problem of overfitting: use regularization**
+
+
 *Underfitting:* If model H is too small, then it performs:
 - Poorly on training data, and poorly on test data.
 
