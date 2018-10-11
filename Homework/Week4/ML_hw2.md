@@ -91,6 +91,9 @@ Output:
  [-2.08705210e+41]
  [-5.84424363e+40]
  [-2.26627489e+39]]
+ 
+ 
+Assume last term w[3, 0] is irrelevant
 ```
 
 ---
@@ -131,7 +134,9 @@ def bfgsOptimizer1c():
 
 Output:
 ```
-[-0.51575135  1.18644932  0.03302971 -1.86038231]
+Resulting value for w:
+
+w = [-0.51575135  1.18644932  0.03302971 -1.86038231]
 ```
 
 ---
@@ -353,8 +358,7 @@ Compressed Image (Random Compression):
 2 c)
 
 Working:
-#todo: Homework
-![homework 2 question 2c]()
+![homework 2 question 2c](hw2_2c.jpg)
 
 
 ---
@@ -452,6 +456,8 @@ from sklearn.linear_model import LogisticRegression
 
 def logisticRegression3b():
     global X_valid, Y_valid, X_train, Y_train
+    
+    # from sklearn.linear_model
     logistic_reg = LogisticRegression()
     logistic_reg.fit(X_train, Y_train)
     
@@ -460,13 +466,57 @@ def logisticRegression3b():
 
 Output:
 ```
+Score:
+0.792134831461 
+```
+
+---
+3 c)
+
+Code:
+```python
+def findParameter3c():
+    logistic_reg = LogisticRegression()
+    logistic_reg.fit(X_train, Y_train)
+
+    Y_test = logistic_reg.predict(X_test)
+
+    coeff_df = pd.DataFrame(X_data.columns.delete(0))
+    coeff_df.columns = ['Features']
+    coeff_df['Coefficient Estimate'] = pd.Series(logistic_reg.coef_[0])
+
+    display(coeff_df)
+```
+
+Output:
+```
+Value of parameter vector:
+
 
 ```
 
+---
 
+3 d)
 
+Code:
+```python
+def predictLabel3d():
+    Y_test = findParameter3c()
 
+    ans = pd.DataFrame({"PassengerId": ID_test, "Survived": Y_test})
+    ans = pd.DataFrame({"PassengerId": ID_test, "Survived": Y_test})
+    ans.to_csv("submit.csv", index=False)
 
+```
+
+Kaggle:
+
+```
+Kaggle ID: Clemence Goh
+Score: 0.73205
+
+```
 
 
 

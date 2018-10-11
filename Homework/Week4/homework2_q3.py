@@ -68,6 +68,30 @@ def logisticRegression3b():
     print(logistic_reg.score(X_valid, Y_valid))
 
 
+def findParameter3c():
+    logistic_reg = LogisticRegression()
+    logistic_reg.fit(X_train, Y_train)
+
+    Y_test = logistic_reg.predict(X_test)
+
+    coeff_df = pd.DataFrame(X_data.columns.delete(0))
+    coeff_df.columns = ['Features']
+    coeff_df['Coefficient Estimate'] = pd.Series(logistic_reg.coef_[0])
+
+    return Y_test
+
+
+def predictLabel3d():
+    Y_test = findParameter3c()
+
+    ans = pd.DataFrame({"PassengerId": ID_test, "Survived": Y_test})
+    ans = pd.DataFrame({"PassengerId": ID_test, "Survived": Y_test})
+    ans.to_csv("submit.csv", index=False)
+
+
+
 if __name__ == '__main__':
     # automatedPreprocess3a()
-    logisticRegression3b()
+    # logisticRegression3b()
+    # findParameter3c()
+    predictLabel3d()
