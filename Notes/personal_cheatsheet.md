@@ -38,8 +38,8 @@ Contains:
 Multiclass Perceptrons:
 - Used for multiclass classification
 - Comprises of feature representation function:
-    - ![Feature vector](../images/feature_vector_perceptron.JPG)
-    - ![Feedback formulation](../images/feedback_formulation_perceptron.JPG)
+    - ![Feature vector](./images/feature_vector_perceptron.JPG)
+    - ![Feedback formulation](./images/feedback_formulation_perceptron.JPG)
 
 ---
 Linear Regression
@@ -52,18 +52,18 @@ Linear Regression
 
 Useful Notation terms:
 - Denoting data from set:
-    - ![x(i), y(i)th set](../images/data_notation.JPG)
+    - ![x(i), y(i)th set](./images/data_notation.JPG)
 
 Hypothesis:
 - This denotes a function generated after the Learning
 Algorithm has been trained by the training set.
 - h(x)
 - Possible Hypothesis:
-    - ![possible hypothesis](../images/possble_hypothesis.JPG)
+    - ![possible hypothesis](./images/possble_hypothesis.JPG)
     - *theta* represents parameters of the model
 - Want the difference between output of hypothesis and actual 
 data to be small.
-    - i.e. ![Difference](../images/hypothesis_minimise.JPG)
+    - i.e. ![Difference](./images/hypothesis_minimise.JPG)
     - This can be equated to J(*theta0*, *theta1*), which is 
     the cost function (Squared Error cost function)
     
@@ -71,7 +71,7 @@ data to be small.
 ---
 Hypothesis VS Cost function
 ---
-![hypothesis and cost function visualisation](../images/h_vs_j.JPG)
+![hypothesis and cost function visualisation](./images/h_vs_j.JPG)
 
 
 --- 
@@ -79,7 +79,7 @@ Gradient Descent
 ---
 
 Basic function:
-![Basic Gradient descent](../images/grad_descent_basic.JPG)
+![Basic Gradient descent](./images/grad_descent_basic.JPG)
 
 How to Minimize?
 - Always take partial derivative and equate to 0
@@ -88,12 +88,12 @@ Optimal value of theta:
 - Set X as Mx2 matrix, [1, x].
 - Set Y as a Nx1 matrix. [y]
 - Optimal value:
-    - ![Optimal value of theta](../images/optimal_theta.JPG)
+    - ![Optimal value of theta](./images/optimal_theta.JPG)
 
 When should you use Gradient Descent and when should you
 use normal?
 - Comparisson:
-![Gradient descent comparison](../images/gradient_descent_normal_comparisson.JPG)
+![Gradient descent comparison](./images/gradient_descent_normal_comparisson.JPG)
 - n ~ 10 000 is a large number
 
 
@@ -115,7 +115,7 @@ Classification (Single and Multi-Class)
     - Tumor: Malignant/Benign?
 
 - For multi-class:
-    - ![Difference from single class](../images/starting_classification.JPG)
+    - ![Difference from single class](./images/starting_classification.JPG)
 
 - Cannot use Linear Regression, since more data points could
 possibly result in a worse hypothesis
@@ -130,12 +130,12 @@ Regularization
 - Ridge Regression:
     - Must be familiar with bias and variance
     - Explanation:
-        - ![Many measurements, ok](../images/many_measurements_ridge.JPG)
+        - ![Many measurements, ok](./images/many_measurements_ridge.JPG)
         - Introduce new, test data:
-        - ![Less measurements, overfit](../images/ridge_new_data.JPG)
+        - ![Less measurements, overfit](./images/ridge_new_data.JPG)
         - Compare to other parts of data:
-        - ![explanation why](../images/explanation_ridge.JPG)
-        - ![Main idea, Ridge](../images/ridge_main_idea.JPG)
+        - ![explanation why](./images/explanation_ridge.JPG)
+        - ![Main idea, Ridge](./images/ridge_main_idea.JPG)
         
     - From training data, find linear line which fits best
         - Following this, find line with test data
@@ -143,7 +143,7 @@ Regularization
         as well as a high variance from the other data.
     
     - Lambda: (Bias)
-        - ![Determining lambda, the bias](../images/determining_lambda.JPG)
+        - ![Determining lambda, the bias](./images/determining_lambda.JPG)
 
     - The number of data required for least squares
     **must** be at least the same number of parameters (dimensions)
@@ -171,12 +171,12 @@ Logistic Regression
 - Want 0 <= h(x) <= 1 (classifier output 0 or 1)
 - Modify from previous (Linear Regression):
     - from:
-    - ![Linear Equation](../images/linear_regression_equation.JPG)
+    - ![Linear Equation](./images/linear_regression_equation.JPG)
     - To:
-    - ![Logistic Regression](../images/modified_for_logistic_regression.JPG)
+    - ![Logistic Regression](./images/modified_for_logistic_regression.JPG)
 
 - This Sigmoid function will have asymptotes at 0 and 1
-    - ![Sigmoid function](../images/Sigmoid_Logistic_function.JPG)
+    - ![Sigmoid function](./images/Sigmoid_Logistic_function.JPG)
 
 - Hypothesis output denotes the probability that y=1 for input x
 - Following probabilty: **P(y=0|x;*theta*) + P(y=1|x;*theta*) = 1**
@@ -190,12 +190,12 @@ Hence, a **Decision Boundary** must be used.
 
 How do we determine this?
 - Simple decision boundary:
-- ![decision boundary, simple](../images/decision_boundary.JPG)
+- ![decision boundary, simple](./images/decision_boundary.JPG)
 
 
 **Non-linear decision boundaries**
 - This requires a plane
-- ![none-linear decision boundary](../images/non_linear_decision_boundary.JPG)
+- ![none-linear decision boundary](./images/non_linear_decision_boundary.JPG)
 - By adding polynomial factors within the equation, we can get
 more complicated decision boundaries, which are linear on a higher
 dimension.
@@ -203,12 +203,12 @@ dimension.
 
 Logistic Regression: Cost Function
 - Using the cost function, we want to minimize it:
-    - ![Minimise Cost function](../images/cost_function_grad_descent.JPG)
+    - ![Minimise Cost function](./images/cost_function_grad_descent.JPG)
 - Deriving it:
     - Minimise the cost function by taking the derivative
-    - ![Working Steps](../images/deriving_minimized_cost_function.JPG)
+    - ![Working Steps](./images/deriving_minimized_cost_function.JPG)
     - End result with alpha:
-    - ![Plugging in derivative](../images/plugging_in_derivative.JPG)
+    - ![Plugging in derivative](./images/plugging_in_derivative.JPG)
 - What has changed? Very similar to Linear regression
     - Definition of the hypothesis has changed, not the same.
     - This causes equation to look the same, but actually is no longer linear
@@ -224,13 +224,13 @@ Batch Gradient Descent & Stochastic Gradient Descent
 Algorithms shown below:
 
 Batch Gradient descent: Naive method.
-- ![Batch algorithm, O(n)](../images/batch_grad_descent_naive_algorithm.JPG)
+- ![Batch algorithm, O(n)](./images/batch_grad_descent_naive_algorithm.JPG)
 - This algorithm goes through all n items for every iteration to take 
 a single step towards the optimum
 
 
 Stochastic Gradient descent: More efficient for scaling
-- ![Stochastic Grad descent](../images/stochastic_grad_descent_algorithm.JPG)
+- ![Stochastic Grad descent](./images/stochastic_grad_descent_algorithm.JPG)
 
 
 Mini-batch gradient descent: (variation of batch)
@@ -240,15 +240,15 @@ Mini-batch gradient descent: (variation of batch)
 | Use all m examples in each iteration | Use 1 example in each iteration | Use b examples in each iteration |
 
 Algorithm:
-- ![mini-batch algorithm](../images/mini_batch_algorithm.JPG)
+- ![mini-batch algorithm](./images/mini_batch_algorithm.JPG)
 
 
 ---
 Correlation coefficient
 ---
 - Similarity *sim(a,b)* == *corr(a,b)*
-- ![correlation coefficient](../images/correlation_coefficient.JPG)
-- ![cosine similarity](../images/cosine_similarity.JPG)
+- ![correlation coefficient](./images/correlation_coefficient.JPG)
+- ![cosine similarity](./images/cosine_similarity.JPG)
 
 
 
@@ -267,17 +267,17 @@ boundary:
         subtracting on from the other gives a **vector** from
         one to the other 
         - Working through this:
-        - ![Showing unit vectors](../images/unit_vectors.JPG)
-        - ![Showing width formula](../images/width_formula.JPG)
-        - ![End state sub](../images/end_state_substitution.JPG)        
+        - ![Showing unit vectors](./images/unit_vectors.JPG)
+        - ![Showing width formula](./images/width_formula.JPG)
+        - ![End state sub](./images/end_state_substitution.JPG)        
         - Lagrange ends up like this:
-        - ![loss for svm](../images/loss_for_SVM.JPG)
+        - ![loss for svm](./images/loss_for_SVM.JPG)
         - This is due to the equation subtracted by its constraints
         - Solve using Lagrange
-        - ![langrange result](../images/lagrange_working.JPG)
-        - ![lagrange sub back](../images/lagrange_sub_into_prev.JPG)
+        - ![langrange result](./images/lagrange_working.JPG)
+        - ![lagrange sub back](./images/lagrange_sub_into_prev.JPG)
         - After optimizing, the output is + or - based on this rule:
-        - ![lagrange end](../images/lagrange_end.JPG) 
+        - ![lagrange end](./images/lagrange_end.JPG) 
         - Guaranteed global maxima, will not get stuck on a local maxima
     
 Kernel methods use **kernel functions**, which enables them to 
@@ -290,9 +290,9 @@ This is called the **"kernel trick"**.
 ==> This is used when there are non-linear decision boundaries
 
 Kernel function is the similarity
-- ![kernel function similarity](../images/kernel_function_is_similarity.JPG)
+- ![kernel function similarity](./images/kernel_function_is_similarity.JPG)
 - Example of a gaussian kernel:
-- ![gaussian kernel function](../images/gaussian_kernel_function_example.JPG)
+- ![gaussian kernel function](./images/gaussian_kernel_function_example.JPG)
 - This ends up predicting binary based on distance to certain points,
 due to different weights on different points. (circle will be drawn around 
 each of these points)
@@ -301,7 +301,7 @@ each of these points)
 Slack Variables:
 - Data outliers which make it non-linearly separable
 - Determine Slack Varaibles (outliers) and ignore them to give best line
-- ![Slack variables example](../images/slack_variable_explanation.JPG)
+- ![Slack variables example](./images/slack_variable_explanation.JPG)
 
 ---
 Bayes Theorem Classifier
@@ -318,7 +318,7 @@ Convolutional Neural Networks (CNN)
 - Very commonly used for image recognition
 - Convolution operation (*) compresses by putting the image
 through a filter
-- ![vertical edge detection](../images/edge_detection_convolution.JPG)
+- ![vertical edge detection](./images/edge_detection_convolution.JPG)
 - The resulting matrix will always be (n-f+1) by (n-f+1)
 
 - **Padding**
@@ -339,7 +339,7 @@ through a filter
 
 - Last notes:
     - convolving on volumes (RGB)
-    - ![volume convolution](../images/volume_convolution.JPG)
+    - ![volume convolution](./images/volume_convolution.JPG)
 
 
 ---
@@ -356,21 +356,21 @@ Recurrent Neural Networks (RNN)
         - w: weight 
         - b: bias
         - x: manual input, could be y from previous
-    - ![formulae](../images/formulae_for_RNN.JPG)
+    - ![formulae](./images/formulae_for_RNN.JPG)
     
     - finding Wa: stack Waa with Wax
         - Visualisation:
-        - ![stacking](../images/simplified_Wa.JPG)
+        - ![stacking](./images/simplified_Wa.JPG)
         - This is to simplify the equation for future algorithms
 
 - Back-propagation:
     - Find loss, back prop using partial derivatives and chain rule
     - Using pure formulation:
-        - ![Formulation back-prop](../images/back_prop_pure_formula.JPG)
+        - ![Formulation back-prop](./images/back_prop_pure_formula.JPG)
     - Nat's notes: (On chain rule)
-        - ![backprop notes 1](../images/nat_notes_1.JPG)
-        - ![back prop notes 2](../images/nat_notes_2.JPG)
-        - ![back propagation notes 3](../images/nat_notes_3.JPG)
+        - ![backprop notes 1](./images/nat_notes_1.JPG)
+        - ![back prop notes 2](./images/nat_notes_2.JPG)
+        - ![back propagation notes 3](./images/nat_notes_3.JPG)
 
 
 ---
@@ -407,7 +407,7 @@ Common Questions
 
 ---
 Hinge loss:
-- ![Hinge loss definition](../images/hinge_loss_definition.JPG)
+- ![Hinge loss definition](./images/hinge_loss_definition.JPG)
 - Note that y should be the "raw" output of the classifier's 
 decision function, not the predicted class label. 
 For instance, in linear SVMs, y= w . x +b
@@ -419,13 +419,13 @@ x is the point to classify.
 Sample 1 - Types of Regressions and Classifications
 
 Predictors:
-- ![predictors](../images/example1_predictors.JPG)
+- ![predictors](./images/example1_predictors.JPG)
 
 Learning Objective/Cost Function:
-- ![Cost function](../images/example1_cost_function.JPG)
+- ![Cost function](./images/example1_cost_function.JPG)
 
 Learning Algorithms:
-- ![Learning algorithms](../images/example1_learning_algorithms.JPG)
+- ![Learning algorithms](./images/example1_learning_algorithms.JPG)
 
 
 
