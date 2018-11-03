@@ -303,11 +303,25 @@ Slack Variables:
 - Determine Slack Varaibles (outliers) and ignore them to give best line
 - ![Slack variables example](./images/slack_variable_explanation.JPG)
 
+
+Primal and Dual Problem:
+- Simple explanation:
+    - ![primal dual relationship](./images/primal_dual_relationship.JPG)
+
+
 ---
 Bayes Theorem Classifier
 ---
 Log likelihood ratio test.
 - Always dealing with joint probability
+
+
+---
+Autoencoders
+---
+High dimension -> low dimension -> High dimension
+- This process of compressing and regenerating is the autoencoder
+
 
 
 ---
