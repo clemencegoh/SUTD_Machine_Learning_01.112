@@ -374,7 +374,7 @@ import pandas as pd
 from IPython.display import display
 
 
-X_data = pd.read_csv("train.csv")
+X_data = pd.read_csv(train.csv)
 X_test = pd.read_csv("test.csv")
 X_valid = X_data.sample(frac=0.2, random_state=200)
 X_train = X_data.drop(X_valid.index)

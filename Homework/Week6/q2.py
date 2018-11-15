@@ -30,7 +30,7 @@ def decision(_x1, _x2, _clf):
     return _clf.decision_function(x)[0]
 
 
-# function to train SVM based on scikit package
+# function to train.csv SVM based on scikit package
 # set gamma to 0.5, kernel to rbf
 def trainSVM():
     # part a

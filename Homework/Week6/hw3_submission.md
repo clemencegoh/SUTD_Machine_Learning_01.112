@@ -148,7 +148,7 @@ def part1():
     showGraph(plt)
     
     
-# function to train SVM based on scikit package
+train.csv
 # set gamma to 0.5, kernel to rbf
 def trainSVM():
     # part a
