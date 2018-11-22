@@ -100,8 +100,10 @@ allowing us to obtain the top k probable state transitions.
 ---
 Question 4:
 
-Forward score:
+![week 11 hw part 1](./new_wk11_part1.jpg)
 
+
+![week 11 hw part 2](./wk11_part2.jpg)
 
 
 
