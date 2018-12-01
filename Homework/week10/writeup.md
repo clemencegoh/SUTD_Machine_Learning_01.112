@@ -1,6 +1,9 @@
 # Homework 4
 
-Name: Clemence Goh
+Name: Clemence Goh (1002075)
+
+Talked to: Cheryl Goh
+
 ---
 
 Question 1:
@@ -100,10 +103,16 @@ allowing us to obtain the top k probable state transitions.
 ---
 Question 4:
 
-![week 11 hw part 1](./new_wk11_part1.jpg)
+![week 11 hw part 1](./replaced_part1.jpg)
 
 
-![week 11 hw part 2](./wk11_part2.jpg)
+Time Complexity:
+
+There are N forward and N backward terms to compute (alpha and beta).
+For each computation for each term, there are N operations.
+Therefore, at every step there will be O(N^2) operations.
+Given length of Z = n, this will be done n times.
+Total time complexity is O(nN^2).
 
 
 
